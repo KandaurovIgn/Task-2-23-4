@@ -33,7 +33,7 @@ public class Main {
     }
 
     public static boolean isValueInsideInterval(int value, int lowerLimit, int upperLimit) {
-        return value >= lowerLimit && value <= upperLimit
+        return value >= lowerLimit && value <= upperLimit;
     }
 
     public static void showDayStatus(int year, int month, int day, boolean dayWeekend) {
