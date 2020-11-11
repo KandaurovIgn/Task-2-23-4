@@ -32,10 +32,8 @@ public class Main {
         return scanner.nextInt();
     }
 
-    public static boolean isValueInsideInterval(int data, int lowerLimit, int upperLimit) {
-        if (data < lowerLimit || data > upperLimit)
-            return false;
-        return true;
+    public static boolean isValueInsideInterval(int value, int lowerLimit, int upperLimit) {
+        return value >= lowerLimit && value <= upperLimit
     }
 
     public static void showDayStatus(int year, int month, int day, boolean dayWeekend) {
@@ -47,9 +45,7 @@ public class Main {
     }
 
     public static boolean isDayWeekend(int dayOfWeek) {
-        if (dayOfWeek == 0 || dayOfWeek == 6)
-            return true;
-        return false;
+       return dayOfWeek == 0 || dayOfWeek == 6;
     }
 
     public static int getDayOfWeek(int year, int month, int day) {
